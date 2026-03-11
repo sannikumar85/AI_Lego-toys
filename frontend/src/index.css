@@ -24,7 +24,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Animated gradient background */
 body::before {
   content: '';
   position: fixed;
@@ -39,7 +38,6 @@ body::before {
 
 #root { position: relative; z-index: 1; }
 
-/* Glass card */
 .glass-card {
   background: var(--bg-glass);
   border: 1px solid var(--border-glow);
@@ -47,7 +45,87 @@ body::before {
   border-radius: 20px;
 }
 
-/* Glow button */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+}
+
+.page-shell {
+  position: relative;
+  min-height: 100vh;
+  padding: 8.5rem 1.25rem 4rem;
+}
+
+.page-shell__inner {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+}
+
+.page-shell__inner--wide {
+  width: min(100%, 1380px);
+}
+
+.page-header {
+  max-width: 760px;
+  margin: 0 auto 2.75rem;
+  text-align: center;
+}
+
+.page-header--left {
+  max-width: none;
+  margin: 0 0 2.25rem;
+  text-align: left;
+}
+
+.page-eyebrow {
+  margin-bottom: 0.9rem;
+  color: rgba(96, 165, 250, 0.82);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.page-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.page-title--compact {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+}
+
+.page-description {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.section-stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.panel-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.subtle-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
@@ -70,30 +148,30 @@ body::before {
   transform: none;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #0d0e1a; }
 ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
 
-/* Pulse animation */
+.custom-scrollbar::-webkit-scrollbar { width: 5px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 8px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
+
 @keyframes pulse-slow {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.6; }
 }
 .animate-pulse-slow { animation: pulse-slow 2s infinite; }
 
-/* Float animation */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
 .animate-float { animation: float 3s ease-in-out infinite; }
 
-/* Spin animation */
 @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 .animate-spin-slow { animation: spin-slow 8s linear infinite; }
 
-/* Shimmer */
 @keyframes shimmer {
   0% { background-position: -1000px 0; }
   100% { background-position: 1000px 0; }
@@ -104,17 +182,9 @@ body::before {
   animation: shimmer 2s infinite linear;
 }
 
-/* Bounding box overlay */
-.detection-canvas-container {
-  position: relative;
-  display: inline-block;
-}
-.detection-canvas-container canvas {
-  position: absolute;
-  top: 0; left: 0;
-}
+.detection-canvas-container { position: relative; display: inline-block; }
+.detection-canvas-container canvas { position: absolute; top: 0; left: 0; }
 
-/* Tag badge */
 .part-badge {
   background: rgba(108,99,255,0.15);
   border: 1px solid rgba(108,99,255,0.4);
@@ -128,6 +198,25 @@ body::before {
   gap: 0.4rem;
 }
 
-/* Confidence bar */
 .conf-bar-bg { background: rgba(108,99,255,0.1); border-radius: 4px; overflow: hidden; height: 6px; }
 .conf-bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--primary), var(--accent)); transition: width 0.8s ease; }
+
+@media (max-width: 1024px) {
+  .page-shell {
+    padding-top: 9.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 8.25rem 1rem 3rem;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+  }
+
+  .page-description {
+    font-size: 0.95rem;
+  }
+}

@@ -61,8 +61,7 @@ export default function Navbar() {
             left: 50%;
             transform: translateX(-50%);
             z-index: 1000;
-            width: calc(100% - 2rem);
-            max-width: 900px;
+            width: min(calc(100% - 1.5rem), 980px);
             background: rgba(13, 14, 26, 0.4);
             backdrop-filter: blur(24px) saturate(150%);
             -webkit-backdrop-filter: blur(24px) saturate(150%);
@@ -79,7 +78,6 @@ export default function Navbar() {
             box-shadow:
               0 10px 40px rgba(0, 0, 0, 0.4),
               0 0 20px rgba(108, 99, 255, 0.1);
-            max-width: 1000px;
           }
 
           .nav-container {
@@ -87,6 +85,7 @@ export default function Navbar() {
             align-items: center;
             justify-content: space-between;
             padding: 0.6rem 1.2rem;
+            gap: 1rem;
           }
 
           /* Logo Styles */
@@ -228,6 +227,46 @@ export default function Navbar() {
             }
             100% {
               background-position: 0% 50%;
+            }
+          }
+
+          @media (max-width: 720px) {
+            .modern-nav {
+              top: 0.75rem;
+              width: calc(100% - 1rem);
+              border-radius: 28px;
+            }
+
+            .modern-nav.scrolled {
+              top: 0.5rem;
+            }
+
+            .nav-container {
+              flex-direction: column;
+              align-items: stretch;
+              padding: 0.85rem;
+              gap: 0.75rem;
+            }
+
+            .nav-logo {
+              justify-content: center;
+            }
+
+            .logo-text {
+              font-size: 1.05rem;
+            }
+
+            .nav-links {
+              width: 100%;
+              justify-content: center;
+              flex-wrap: wrap;
+            }
+
+            .nav-link {
+              justify-content: center;
+              flex: 1 1 30%;
+              min-width: 92px;
+              padding: 0.55rem 0.9rem;
             }
           }
         `}</style>
