@@ -181,6 +181,596 @@
       "status": "done",
       "createdAt": "2026-03-13T00:43:58.835Z",
       "updatedAt": "2026-03-13T00:43:58.835Z"
+    },
+    {
+      "_id": "1773388069938jird8aql0",
+      "result_id": "d0a26f5f-5547-403d-b0b9-5ad0f1c2f84a",
+      "original_images": [
+        "1773388046374-50037a4d-89f1-4227-acff-eefeea4a221a.jpg"
+      ],
+      "annotated_images": [
+        "annotated-cce02544.jpg"
+      ],
+      "detections": [
+        {
+          "label": "x1-y2-z2-twinfillet",
+          "confidence": 0.9847,
+          "bbox": [
+            87,
+            334,
+            184,
+            396
+          ]
+        },
+        {
+          "label": "arm",
+          "confidence": 0.9743,
+          "bbox": [
+            301,
+            283,
+            372,
+            360
+          ]
+        },
+        {
+          "label": "arm",
+          "confidence": 0.961,
+          "bbox": [
+            439,
+            175,
+            496,
+            238
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9585,
+          "bbox": [
+            309,
+            102,
+            363,
+            136
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9464,
+          "bbox": [
+            430,
+            366,
+            506,
+            460
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9463,
+          "bbox": [
+            184,
+            197,
+            281,
+            235
+          ]
+        }
+      ],
+      "confidence_summary": {
+        "x1-y2-z2-twinfillet": 1,
+        "arm": 2,
+        "body": 3
+      },
+      "predicted_toy": {
+        "name": "Toy Arm",
+        "confidence": 1,
+        "description": "An arm appendage, typically from an action figure.",
+        "assembly_complexity": "simple",
+        "assembly_time": 1,
+        "expected_parts": [],
+        "part_positions": {}
+      },
+      "assembly_3d": {
+        "missing_parts": {
+          "missing_parts": [],
+          "detected_counts": {
+            "x1-y2-z2-twinfillet": 1,
+            "arm": 2,
+            "body": 3
+          },
+          "expected_counts": {},
+          "assembly_completeness": 1,
+          "total_expected": 0,
+          "total_detected": 6
+        },
+        "positions": {
+          "leftArm": [
+            -1.2,
+            0.5,
+            0
+          ],
+          "rightArm": [
+            1.2,
+            0.5,
+            0
+          ]
+        },
+        "sequence": [
+          {
+            "step": 0,
+            "part": "body",
+            "action": "attach",
+            "delay": 0
+          },
+          {
+            "step": 1,
+            "part": "leftArm",
+            "action": "attach",
+            "delay": 1.5
+          },
+          {
+            "step": 2,
+            "part": "rightArm",
+            "action": "attach",
+            "delay": 3
+          }
+        ],
+        "total_steps": 3,
+        "estimated_assembly_time": 3
+      },
+      "generated_image_url": null,
+      "processing_time": 23.551,
+      "status": "done",
+      "createdAt": "2026-03-13T07:47:49.938Z",
+      "updatedAt": "2026-03-13T07:47:49.938Z"
+    },
+    {
+      "_id": "1773388528392uoncoujvz",
+      "result_id": "f87a8dd4-9ced-4dcf-8fb5-c03f266727c2",
+      "original_images": [
+        "1773388528188-4110cbbc-6753-4eb6-b4cb-ddacc1257897.jpg"
+      ],
+      "annotated_images": [
+        "annotated-1c5b5bca.jpg"
+      ],
+      "detections": [
+        {
+          "label": "x1-y2-z2-twinfillet",
+          "confidence": 0.9847,
+          "bbox": [
+            87,
+            334,
+            184,
+            396
+          ]
+        },
+        {
+          "label": "arm",
+          "confidence": 0.9743,
+          "bbox": [
+            301,
+            283,
+            372,
+            360
+          ]
+        },
+        {
+          "label": "arm",
+          "confidence": 0.961,
+          "bbox": [
+            439,
+            175,
+            496,
+            238
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9585,
+          "bbox": [
+            309,
+            102,
+            363,
+            136
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9464,
+          "bbox": [
+            430,
+            366,
+            506,
+            460
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9463,
+          "bbox": [
+            184,
+            197,
+            281,
+            235
+          ]
+        }
+      ],
+      "confidence_summary": {
+        "x1-y2-z2-twinfillet": 1,
+        "arm": 2,
+        "body": 3
+      },
+      "predicted_toy": {
+        "name": "Toy Arm",
+        "confidence": 1,
+        "description": "An arm appendage, typically from an action figure.",
+        "assembly_complexity": "simple",
+        "assembly_time": 1,
+        "expected_parts": [],
+        "part_positions": {}
+      },
+      "assembly_3d": {
+        "missing_parts": {
+          "missing_parts": [],
+          "detected_counts": {
+            "x1-y2-z2-twinfillet": 1,
+            "arm": 2,
+            "body": 3
+          },
+          "expected_counts": {},
+          "assembly_completeness": 1,
+          "total_expected": 0,
+          "total_detected": 6
+        },
+        "positions": {
+          "leftArm": [
+            -1.2,
+            0.5,
+            0
+          ],
+          "rightArm": [
+            1.2,
+            0.5,
+            0
+          ]
+        },
+        "sequence": [
+          {
+            "step": 0,
+            "part": "body",
+            "action": "attach",
+            "delay": 0
+          },
+          {
+            "step": 1,
+            "part": "leftArm",
+            "action": "attach",
+            "delay": 1.5
+          },
+          {
+            "step": 2,
+            "part": "rightArm",
+            "action": "attach",
+            "delay": 3
+          }
+        ],
+        "total_steps": 3,
+        "estimated_assembly_time": 3
+      },
+      "generated_image_url": null,
+      "processing_time": 0.195,
+      "status": "done",
+      "createdAt": "2026-03-13T07:55:28.393Z",
+      "updatedAt": "2026-03-13T07:55:28.393Z"
+    },
+    {
+      "_id": "1773389497719odnypgd1o",
+      "result_id": "0f8d0e8b-79ba-4997-9349-07743bcce679",
+      "original_images": [
+        "1773389497504-e7179421-9b5a-4ef1-949a-e700539f42c8.jpg"
+      ],
+      "annotated_images": [
+        "annotated-30c463ea.jpg"
+      ],
+      "detections": [
+        {
+          "label": "head",
+          "confidence": 0.965,
+          "bbox": [
+            321,
+            105,
+            358,
+            144
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9636,
+          "bbox": [
+            370,
+            274,
+            434,
+            347
+          ]
+        },
+        {
+          "label": "accessory",
+          "confidence": 0.9614,
+          "bbox": [
+            300,
+            376,
+            354,
+            443
+          ]
+        },
+        {
+          "label": "head",
+          "confidence": 0.959,
+          "bbox": [
+            229,
+            203,
+            278,
+            256
+          ]
+        },
+        {
+          "label": "arm",
+          "confidence": 0.9557,
+          "bbox": [
+            443,
+            133,
+            493,
+            234
+          ]
+        }
+      ],
+      "confidence_summary": {
+        "head": 2,
+        "body": 1,
+        "accessory": 1,
+        "arm": 1
+      },
+      "predicted_toy": {
+        "name": "Action Figure",
+        "confidence": 1,
+        "description": "A classic humanoid action figure with articulated arms and head.",
+        "assembly_complexity": "medium",
+        "assembly_time": 4,
+        "expected_parts": [
+          "head",
+          "body",
+          "arm",
+          "arm"
+        ],
+        "part_positions": {
+          "head": [
+            0,
+            2.2,
+            0
+          ],
+          "body": [
+            0,
+            0,
+            0
+          ],
+          "leftArm": [
+            -1.2,
+            0.5,
+            0
+          ],
+          "rightArm": [
+            1.2,
+            0.5,
+            0
+          ]
+        }
+      },
+      "assembly_3d": {
+        "missing_parts": {
+          "missing_parts": [
+            "arm"
+          ],
+          "detected_counts": {
+            "head": 2,
+            "body": 1,
+            "accessory": 1,
+            "arm": 1
+          },
+          "expected_counts": {
+            "head": 1,
+            "body": 1,
+            "arm": 2
+          },
+          "assembly_completeness": 0.75,
+          "total_expected": 4,
+          "total_detected": 5
+        },
+        "positions": {
+          "head": [
+            0,
+            2.2,
+            0
+          ],
+          "body": [
+            0,
+            0,
+            0
+          ],
+          "leftArm": [
+            -1.2,
+            0.5,
+            0
+          ]
+        },
+        "sequence": [
+          {
+            "step": 0,
+            "part": "body",
+            "action": "attach",
+            "delay": 0
+          },
+          {
+            "step": 1,
+            "part": "head",
+            "action": "attach",
+            "delay": 1.5
+          },
+          {
+            "step": 2,
+            "part": "leftArm",
+            "action": "attach",
+            "delay": 3
+          },
+          {
+            "step": 3,
+            "part": "accessory",
+            "action": "attach",
+            "delay": 4.5
+          }
+        ],
+        "total_steps": 4,
+        "estimated_assembly_time": 16
+      },
+      "generated_image_url": null,
+      "processing_time": 0.211,
+      "status": "done",
+      "createdAt": "2026-03-13T08:11:37.719Z",
+      "updatedAt": "2026-03-13T08:11:37.719Z"
+    },
+    {
+      "_id": "177338957677561x2er7iq",
+      "result_id": "76cbd904-441d-442f-a3cf-72722590315b",
+      "original_images": [
+        "1773389576433-26b27083-70d5-472c-8c47-2de02f517be8.jpg"
+      ],
+      "annotated_images": [
+        "annotated-bffb76b1.jpg"
+      ],
+      "detections": [
+        {
+          "label": "head",
+          "confidence": 0.9825,
+          "bbox": [
+            209,
+            312,
+            273,
+            388
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9689,
+          "bbox": [
+            302,
+            170,
+            375,
+            212
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9664,
+          "bbox": [
+            344,
+            237,
+            403,
+            291
+          ]
+        },
+        {
+          "label": "body",
+          "confidence": 0.9611,
+          "bbox": [
+            230,
+            107,
+            306,
+            143
+          ]
+        },
+        {
+          "label": "head",
+          "confidence": 0.9559,
+          "bbox": [
+            197,
+            171,
+            226,
+            226
+          ]
+        }
+      ],
+      "confidence_summary": {
+        "head": 2,
+        "body": 3
+      },
+      "predicted_toy": {
+        "name": "Simple Doll",
+        "confidence": 1,
+        "description": "A basic doll with head and torso.",
+        "assembly_complexity": "simple",
+        "assembly_time": 2,
+        "expected_parts": [
+          "head",
+          "body"
+        ],
+        "part_positions": {
+          "head": [
+            0,
+            1.8,
+            0
+          ],
+          "body": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "assembly_3d": {
+        "missing_parts": {
+          "missing_parts": [],
+          "detected_counts": {
+            "head": 2,
+            "body": 3
+          },
+          "expected_counts": {
+            "head": 1,
+            "body": 1
+          },
+          "assembly_completeness": 1,
+          "total_expected": 2,
+          "total_detected": 5
+        },
+        "positions": {
+          "head": [
+            0,
+            1.8,
+            0
+          ],
+          "body": [
+            0,
+            0,
+            0
+          ]
+        },
+        "sequence": [
+          {
+            "step": 0,
+            "part": "body",
+            "action": "attach",
+            "delay": 0
+          },
+          {
+            "step": 1,
+            "part": "head",
+            "action": "attach",
+            "delay": 1.5
+          }
+        ],
+        "total_steps": 2,
+        "estimated_assembly_time": 4
+      },
+      "generated_image_url": null,
+      "processing_time": 0.338,
+      "status": "done",
+      "createdAt": "2026-03-13T08:12:56.775Z",
+      "updatedAt": "2026-03-13T08:12:56.775Z"
     }
   ]
 }
