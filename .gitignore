@@ -1,1 +1,18 @@
-node_modules
+node_modules/
+.env
+
+# Datasets and training artifacts (too large for GitHub)
+dataset/
+dataset_yolo/
+runs/
+uploads/
+
+# Python cache & build
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+yolov8n.pt
+
+# Others
+.DS_Store
+*.log

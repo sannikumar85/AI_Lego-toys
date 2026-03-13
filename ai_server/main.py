@@ -276,6 +276,19 @@ COCO_TOY_MAP = {
     'bicycle': 'wheel', 'motorcycle': 'wheel',
     'ball': 'accessory', 'cup': 'body', 'bottle': 'body',
     'clock': 'accessory', 'scissors': 'arm',
+    
+    # Custom newly trained Lego class mappings:
+    'lego': 'body',
+    'x1-y1-z2': 'accessory',
+    'x1-y2-z1': 'head',
+    'x1-y2-z2': 'head',
+    'x1-y2-z2-chamfer': 'head',
+    'x1-y3-z2': 'body',
+    'x1-y3-z2-fillet': 'body',
+    'x1-y4-z1': 'arm',
+    'x1-y4-z2': 'arm',
+    'x2-y2-z2': 'body',
+    'x2-y2-z2-fillet': 'wheel',
 }
 
 def run_yolo_detection(image_path: str) -> list[dict]:

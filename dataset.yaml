@@ -1,5 +1,0 @@
-path: C:/Users/Dell/OneDrive/Desktop/toys/dataset
-train: images/train
-val: images/val
-nc: 5
-names: ['head', 'arm', 'wheel', 'body', 'accessory']

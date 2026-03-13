@@ -1,0 +1,186 @@
+{
+  "results": [
+    {
+      "_id": "1773362331700drnktt6mj",
+      "result_id": "25fda64c-d4f1-4b18-ad63-34beb02573a5",
+      "original_images": [
+        "1773362320268-c2c8310d-5818-45ef-a217-ebe8bde9a1b6.jpg"
+      ],
+      "annotated_images": [
+        "annotated-e046b7cd.jpg"
+      ],
+      "detections": [
+        {
+          "label": "kite",
+          "confidence": 0.7716,
+          "bbox": [
+            183,
+            196,
+            284,
+            234
+          ]
+        },
+        {
+          "label": "kite",
+          "confidence": 0.6946,
+          "bbox": [
+            307,
+            101,
+            365,
+            137
+          ]
+        },
+        {
+          "label": "kite",
+          "confidence": 0.5852,
+          "bbox": [
+            299,
+            281,
+            374,
+            362
+          ]
+        },
+        {
+          "label": "kite",
+          "confidence": 0.5151,
+          "bbox": [
+            437,
+            174,
+            496,
+            239
+          ]
+        },
+        {
+          "label": "kite",
+          "confidence": 0.4625,
+          "bbox": [
+            428,
+            365,
+            507,
+            461
+          ]
+        }
+      ],
+      "confidence_summary": {
+        "kite": 5
+      },
+      "predicted_toy": {
+        "name": "Unknown Toy",
+        "confidence": 0.5,
+        "description": "Could not determine toy type from detected parts.",
+        "assembly_complexity": "simple",
+        "assembly_time": 1,
+        "expected_parts": [],
+        "part_positions": {}
+      },
+      "assembly_3d": {
+        "missing_parts": {
+          "missing_parts": [],
+          "detected_counts": {
+            "kite": 5
+          },
+          "expected_counts": {},
+          "assembly_completeness": 1,
+          "total_expected": 0,
+          "total_detected": 5
+        },
+        "positions": {},
+        "sequence": [],
+        "total_steps": 0,
+        "estimated_assembly_time": 0
+      },
+      "generated_image_url": null,
+      "processing_time": 11.422,
+      "status": "done",
+      "createdAt": "2026-03-13T00:38:51.700Z",
+      "updatedAt": "2026-03-13T00:38:51.700Z"
+    },
+    {
+      "_id": "17733626388352fvu92ohz",
+      "result_id": "3c3603fd-1845-4ff0-ad67-7716fca849de",
+      "original_images": [
+        "1773362638669-fbff5035-1c36-4020-acea-cd2aed11efd1.jpg"
+      ],
+      "annotated_images": [
+        "annotated-943004e9.jpg"
+      ],
+      "detections": [
+        {
+          "label": "traffic light",
+          "confidence": 0.8531,
+          "bbox": [
+            413,
+            143,
+            452,
+            242
+          ]
+        },
+        {
+          "label": "kite",
+          "confidence": 0.7158,
+          "bbox": [
+            224,
+            306,
+            283,
+            356
+          ]
+        },
+        {
+          "label": "kite",
+          "confidence": 0.5972,
+          "bbox": [
+            197,
+            178,
+            242,
+            230
+          ]
+        },
+        {
+          "label": "traffic light",
+          "confidence": 0.4491,
+          "bbox": [
+            414,
+            329,
+            547,
+            393
+          ]
+        }
+      ],
+      "confidence_summary": {
+        "traffic light": 2,
+        "kite": 2
+      },
+      "predicted_toy": {
+        "name": "Unknown Toy",
+        "confidence": 0.5,
+        "description": "Could not determine toy type from detected parts.",
+        "assembly_complexity": "simple",
+        "assembly_time": 1,
+        "expected_parts": [],
+        "part_positions": {}
+      },
+      "assembly_3d": {
+        "missing_parts": {
+          "missing_parts": [],
+          "detected_counts": {
+            "traffic light": 2,
+            "kite": 2
+          },
+          "expected_counts": {},
+          "assembly_completeness": 1,
+          "total_expected": 0,
+          "total_detected": 4
+        },
+        "positions": {},
+        "sequence": [],
+        "total_steps": 0,
+        "estimated_assembly_time": 0
+      },
+      "generated_image_url": null,
+      "processing_time": 0.164,
+      "status": "done",
+      "createdAt": "2026-03-13T00:43:58.835Z",
+      "updatedAt": "2026-03-13T00:43:58.835Z"
+    }
+  ]
+}
